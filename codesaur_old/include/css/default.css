@@ -1,0 +1,612 @@
+/* 
+    Document   : default
+    Created on : Feb 29, 2012, 3:16:07 PM
+    Author     : coden
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* Basic */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+body { 
+    line-height: 1.5;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+
+table, td, th {
+    vertical-align: middle;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+
+blockquote, q {
+    quotes: "" "";
+}
+
+a img {
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: #111;
+}
+h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 0.5em;
+}
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.75em;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+h4 {
+    font-size: 1.2em;
+    line-height: 1.25;
+    margin-bottom: 1.25em;
+    height: 1.25em;
+}
+h5 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+h6 {
+    font-size: 1em;
+    font-weight: bold;
+}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+p {
+    margin: 0 0 1.5em;
+}
+p img {
+    float: left;
+    margin: 1.5em 1.5em 1.5em 0;
+    padding: 0;
+}
+p img.right {
+    float: right;
+    margin: 1.5em 0 1.5em 1.5em;
+}
+
+a:focus, a:hover {
+    color: #000;
+}
+a {
+    color: #fe0000;
+    text-decoration: none;
+}
+
+blockquote {
+    margin: 1.5em;
+    color: #666;
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+em, dfn {
+    font-style: italic;
+}
+dfn {
+    font-weight: bold;
+}
+sup, sub {
+    line-height: 0;
+}
+abbr, acronym {
+    border-bottom: 1px dotted #666;
+}
+address {
+    margin: 0 0 1.5em;
+    font-style: italic;
+}
+del {
+    color:#666;
+}
+pre, code,tt {
+    font: 1em 'andale mono', 'lucida console', monospace;
+    line-height: 1.5;
+}
+
+li ul, li ol {
+    margin:0 1.5em;
+}
+ul, ol {
+    margin: 0 1.5em 1.5em 1.5em;
+}
+ul {
+    list-style-type: disc;
+}
+ol {
+    list-style-type: decimal;
+}
+
+dl {
+    margin: 0 0 1.5em 0;
+}
+dl dt {
+    font-weight: bold;
+}
+dd {
+    margin-left: 1.5em;
+}
+
+.small {
+    font-size: .8em;
+    margin-bottom: 1.875em;
+    line-height: 1.875em;
+}
+.large {
+    font-size: 1.2em;
+    line-height: 2.5em;
+    margin-bottom: 1.25em;
+}
+.hide {
+    display: none;
+}
+
+.quiet {
+    color: #666;
+}
+.loud {
+    color: #000;
+}
+.highlight  {
+    background: #ff0;
+}
+
+.added      {
+    background: #060;
+    color: #fff;
+}
+.removed { 
+    background: #900;
+    color: #fff;
+}
+
+.first {
+    margin-left:0;
+    padding-left:0;
+}
+.last {
+    margin-right: 0;
+    padding-right: 0;
+}
+.top {
+    margin-top: 0;
+    padding-top:0;
+}
+.bottom {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+
+.clear { 
+    clear:both;
+}
+
+body {
+    background-color: #a8d2e8;
+    font-size: 80%;
+    color: #545454;
+    font-family: "Arial", sans-serif;
+}
+
+code {
+    display: inline;
+    padding: 2px 6px;
+    background: #F7F7F7;
+    margin: 0px 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+pre {
+    display: block;
+    white-space: normal;
+    background: #F7F7F7;
+    padding: 10px 12px;
+    margin: 14px 0px;
+    clear: both;
+    font-size: 0.9em;
+}
+blockquote {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 10px 10px 70px;
+    font-style: italic;
+}
+
+/* Div */
+#header-wrapper {
+    background: #fff; 
+    border-bottom: 2px solid #8bb8d2;
+}
+#header, #work, #footer {
+    width: 950px;
+    margin: 0 auto;
+    text-align: left;
+}
+#header {
+    position: relative;
+    background: #fff;
+    height: 80px;
+}
+#header .logo {
+    position: absolute;
+    left: 0;
+    width: 350px;
+}
+#header .defaultmenu {
+    position: absolute;
+    height: 24px;
+    top: 5px;
+    left: 350px;
+    width: 600px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -khtml-border-radius: 2px;
+}
+#header .defaultmenu ul {
+    padding-top: 1px;
+}
+#header .defaultmenu ul li {
+    display: inline;
+    list-style-type: none;
+    padding-left: 35px;
+    cursor: pointer;
+}
+#header .defaultmenu ul li a {
+    padding-left: 5px;
+    font-size: 85%;
+    font-family: Tahoma;
+    color: #0066cc;
+}
+#header .defaultmenu ul li a:hover {
+    text-decoration: underline;
+}
+#footer {
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#footer a:link, #footer a:active, #footer a:visited {
+    font-size: 12px;
+    font-family: Tahoma;
+    color: #444;
+    text-decoration: none;
+}
+#footer a:hover {
+    color: #000;
+    text-decoration: none;
+}
+#work {
+    background: #e6f2fa;
+    margin-top: 22px;
+    border: 1px solid #8bb8d2;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+#menunav {
+    height: 65px;
+}
+.menunav_item {
+    float: left;
+    width: auto;
+    height: 18px;
+    padding: 8px;
+    margin-top: 15px;
+    margin-left: 8px;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+}
+#menunav a {
+    color: #0066cc;
+}
+#menunav a:hover, #menunav #selected_item a {
+    color: #900;
+    font-weight: bold;
+}
+#menunav #selected_item {
+    background-color: #eee;
+}
+
+#content {
+    background: #f9f9f9;
+    padding: 3px 8px;
+}
+
+.box {
+    background: #fff url(../images/box-bck.gif) repeat-x top left;
+    border: 1px solid #fff;
+    margin: 3px 0px;
+    padding: 14px;
+}
+.box h2 {
+    margin: 0px;
+    padding: 1px 2px 4px;
+    font-size: 17px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 7px;
+}
+
+/* Table */  
+table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-bottom: 3px solid #666;
+}
+thead tr th {
+    font-weight: bold;
+    background: #fff url(../images/box-bck.gif) repeat-x top left;
+    border-bottom: 1px solid #eee;
+    padding: 4px 5px;
+}
+tbody tr td {
+    border-top: 1px solid #ccc;
+    padding: 6px 5px;
+    background: #f9f9f9;
+}
+tbody tr.alt td {
+    background: #fff;
+}
+
+/* Buttons */
+.edit, .delete {
+    display: block;
+    padding: 1px 8px;
+    color: #fff;
+    -moz-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    float: left;
+    margin: 0px 2px;
+    font-size: 85%;
+}	
+.edit {
+    background: #66ABBF;
+}
+.edit:hover {
+    background: #0066cc;
+    color: #fff;
+}
+.delete {
+    background: #DC6A6A;
+}
+.delete:hover {
+    background: #C64747;
+    color: #fff;
+}
+
+.submit, .button {
+    background: #fff url(../images/btn-bck.gif) repeat-x bottom left;
+    border: 1px solid #aaa;
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+    -moz-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.submit:hover, .button:hover {
+    background: #fff url(../images/btn-bck-h.gif) repeat-x bottom left;
+}
+.submit {
+    padding: 3px 10px;
+}
+.button {
+    padding: 5px 10px 4px;
+}
+
+/* Paginator */
+.paginator {
+    margin: 0px;
+    padding: 0px;
+    list-style: none; 
+    display: block;
+    clear: both;
+    border-top: 1px solid #eee;
+    padding: 8px 0px 0px;
+}
+.paginator li {
+    display: inline;
+}
+.paginator li a {
+    color: #0066cc;
+    border: 1px solid #aaa;
+    padding: 3px 5px;
+}
+
+/* Validation */
+.validate_success, .validate_error {
+    padding-left: 18px;
+    font-style: italic;
+    margin-left: 4px;
+}
+.validate_success {
+    background: url(../images/v-success.png) no-repeat left;
+    color: #39CE31;
+}
+.validate_error {
+    background: url(../images/v-error.png) no-repeat left;
+    color: #D33232;
+}
+
+/* Forms */
+fieldset {
+    border: 1px solid #aaa;
+    padding: 14px;
+}
+fieldset legend {
+    font-weight: bold;
+    padding: 6px;
+}
+
+.field_desc {
+    padding-left: 6px;
+    font-style: italic;
+    color: #868176;
+}
+.field_desc:hover {
+    color: #59544A;
+}
+
+.input_field {
+    background: #f9f9f9;
+    padding: 3px 6px;
+    margin: 0px 0px 4px 0px;
+}
+.input_field label {
+    display: block;
+    text-align: right;
+    width: 110px;
+    float: left;
+    position: relative;
+    top: 6px;
+    padding-right: 6px;
+}
+.input_field_title {
+    background: #f1f1f1;
+    padding: 3px 6px;
+    padding-left: 12px;
+    margin: 0px 0px 4px 0px;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px dashed #444;
+}
+input.smallfield {
+    width: 100px;
+}
+input.mediumfield {
+    width: 200px;
+}
+input.bigfield {
+    width: 350px;
+}
+select.smallfield {
+    width: 118px;
+}
+select.mediumfield {
+    width: 218px;
+}
+select.bigfield {
+    width: 350px;
+}
+select, input[type=text], input[type=password], textarea {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 8px;
+    margin: 2px 0px;
+}
+textarea {
+    width: 97%;
+    margin-bottom: 6px;
+}
+select:focus, input[type=text]:focus, input[type=password]:focus, textarea:focus {
+    background: #fff url(../images/box-bck.gif) repeat-x top left;
+}
+
+/* Notice */
+.notice {
+    background: #FFFECC url(../images/n-notice.gif) no-repeat 10px;	
+    border: 1px solid #FAECB5;
+}
+.success {
+    background: #E2F9E3 url(../images/n-success.gif) no-repeat 10px;	
+    border: 1px solid #9ECE9E;
+}
+.error {
+    background: #FFEDEF url(../images/n-error.gif) no-repeat 10px;	
+    border: 1px solid #FFC5CC;
+}
+.notice, .success, .error {
+    color: #636363;
+    font-size: 0.92em;
+    padding: 14px 14px 14px 68px;
+    margin: 6px 0px;
+}
+
+.notice span, .success span, .error span {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 2px;
+}
+.success span {
+    color: #579157;
+}
+.error span {
+    color: #CF8790
+}
+.notice span {
+    color: #BBAB67;
+}
+.notice p, .success p, .error p {
+    margin: 0px;
+    padding: 0px;
+}

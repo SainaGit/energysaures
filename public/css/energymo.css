@@ -1,0 +1,58 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.clear { 
+    clear: both;
+}
+
+body {
+    background: white;
+    font-family: "Tahoma";
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#container {
+    position: relative;
+    margin: 10px auto 20px auto;
+    width: 960px;
+    box-shadow: 0px 1px 10px #343434;
+    -moz-box-shadow: 0px 1px 10px #343434;
+    -webkit-box-shadow: 0px 1px 10px #343434;
+}
+
+header {
+    height: 247px;
+    background: url("../img/head.jpg") no-repeat;
+}
+.listo {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+header h1 {
+    position: absolute;
+    top: 10px;
+    left: 340px;
+    float: inside;
+}
+.sysmenu {
+    position: absolute;
+    width: 100%;
+    top: 210px;
+    height: 37px;
+    padding-top: 6px;
+    font-size: 15px;
+    background: url("../img/menu-bck.png");
+}
+.navmenu {
+    position: absolute;
+    width: 100%;
+    top: 210px;
+    height: 37px;
+    padding-top: 6px;
+    font-size: 15px;
+    background: url("../img/menu-bck.png");
+}

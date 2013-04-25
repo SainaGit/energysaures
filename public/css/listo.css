@@ -1,0 +1,40 @@
+.listo ul {
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+}
+.listo ul li {
+    float: left;
+}
+.listo ul li a {
+    display: block;
+    width: 36px;
+    height: 60px;
+    margin-right: 3px;
+}
+.listo ul li:nth-child(1) a {
+    background: url("../listo/energy1.png") no-repeat;
+}
+.listo ul li:nth-child(2) a {
+    background: url("../listo/energy2.png") no-repeat;
+}
+.listo ul li:nth-child(3) a {
+    background: url("../listo/energy3.png") no-repeat;
+}
+.listo ul li:nth-child(4) a {
+    background: url("../listo/energy4.png") no-repeat;
+}
+.listo ul li:nth-child(5) a {
+    background: url("../listo/energy5.png") no-repeat;
+}
+.listo ul li a span {
+    text-transform: uppercase;
+    display: none;
+    color: white;
+    left: 0;
+    top: 40px;
+    position: absolute;
+}
+.listo ul li a:hover span {
+    display: block;
+}

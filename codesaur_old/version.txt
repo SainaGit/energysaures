@@ -1,0 +1,20 @@
+Founder : coden aka Narankhuu N.
+mailto  : naregmailbox@yahoo.com
+  
+Copyright (C) 2012 Narankhuu N.
+All rights reserved.
+
+Information
+-----------
+    Project/Product   : Codesaur - Content Management System
+    Original FileName : codesaur-cms
+    Version           : (version2) for radioservice.mn
+    Description       : Declaration of Codesaur-CMS
+    IDE               : NetBeans IDE 7.1
+    Target(s)         : PHP
+    Codepage(s)	      : UNICODE
+ 
+History
+-----------
+    2/29/2012 - Initial version
+    3/05/2012 - Comment oruuldag bolgow.
