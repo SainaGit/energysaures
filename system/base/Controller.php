@@ -35,14 +35,22 @@ abstract class Controller
         echo '<meta name="' . $metakey . '" content="' . $web[$metakey] . '">' . PHP_EOL;
     }
     
-    public function incScriptsToHtml(array $script_list, $include_path = _WEB_PUBLIC_) {
-        foreach ($script_list as $script)
-            echo '<script src="' . $include_path . $script . '"></script>' . PHP_EOL;
+    public function incScriptToHtml($script, $include_path = _WEB_PUBLIC_) {
+        echo '<script src="' . $include_path . $script . '"></script>' . PHP_EOL;
     }
     
+    public function incScriptsToHtml(array $script_list, $include_path = _WEB_PUBLIC_) {
+        foreach ($script_list as $script)
+            $this->incScriptToHtml($script, $include_path);
+    }
+
+    public function incStyleToHtml($style, $include_path = _WEB_PUBLIC_) {
+        echo '<link rel="stylesheet" href="' . $include_path . $style . '">' . PHP_EOL;
+    }
+
     public function incStylesToHtml(array $style_list, $include_path = _WEB_PUBLIC_) {
         foreach ($style_list as $style)
-            echo '<link rel="stylesheet" href="' . $include_path . $style . '">' . PHP_EOL;
+            $this->incStyleToHtml($style, $include_path);
     }
     
     public function HtmlEndOfLine() {

@@ -40,6 +40,13 @@ codesaur::instance()->controller->incStylesToHtml(array('css/energymo.css', 'css
         </ul>
     </div>
     <h1><a href="<?php echo _WEB_; ?>"><img src="<?php echo _WEB_PUBLIC_; ?>img/weblogo.png" alt="Return to the homepage" /></a></h1>
+    <div class="sysmenu">
+        <ul>
+            <li><img src="#" alt="Сайтын бүтэц" /><a href="#">Сайтын бүтэц</a></li>
+            <li><img src="#" alt="Санал хүсэлт" /><a href="#">Санал хүсэлт</a></li>
+            <li><img src="#" alt="English" /><a href="/?lang=en">English</a></li>
+        </ul>
+    </div>
     <div class="navmenu">
     <nav>
         <ul>

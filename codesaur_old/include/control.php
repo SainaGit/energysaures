@@ -25,7 +25,7 @@
             </div>
             <div class="defaultmenu">
                 <ul>
-                    <li><img src="<?php echo CMS_ROOT;?>include/images/btn-home.gif" alt="Үндсэн сайт" /><a href="<?php echo WEB_ROOT.'test/'; ?>" target="_blank">Үндсэн сайт</a></li>
+                    <li><img src="<?php echo CMS_ROOT;?>include/images/btn-home.gif" alt="Үндсэн сайт" /><a href="<?php echo WEB_ROOT; ?>" target="_blank">Үндсэн сайт</a></li>
                     <li><img src="<?php echo CMS_ROOT;?>include/images/btn-help.gif" alt="Тусламж" /><a href="#">Тусламж</a></li>
                     <li><img src="<?php echo CMS_ROOT;?>include/images/btn-samples.gif" alt="Загварууд" /><a href="#">Загварууд</a></li>
                     <li><img src="<?php echo CMS_ROOT;?>include/images/btn-feedback.gif" alt="Санал хүсэлт" /><a href="#" onclick="return Home.showFeedback();">Санал хүсэлт</a></li>

@@ -69,6 +69,6 @@ class AdminController extends Controller
                 else
                     $errorMessage = 'Нэвтрэх нэр эсвэл нууц үг буруу байна.';
             }
-            return $errorMessage;
-        }
+        return $errorMessage;
+    }
 }

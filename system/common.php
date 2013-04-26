@@ -93,6 +93,24 @@ function require_config($config_name, $path = _APP_)
     return require_code($path . DIR_CONFIG . DS . $config_name . EXT);
 }
 
+function require_absolute($filepath, $path)
+{
+    return require_code($path . $filepath . EXT);
+}
+
+function echo_html($var)
+{
+    if ( ! isset($var))
+        return;
+        
+    if (is_array($var)) {
+        foreach($var as $text)
+            echo $text;
+    } else {
+        echo $var;
+    }
+}
+
 function debug_echo($var, $with_comma = false)
 {
     if (!defined('DEVELOPMENT'))

@@ -7,7 +7,6 @@ defined('EXT')                || define('EXT', ".php");
 defined('DEF_APP')            || define('DEF_APP', "application");
 defined('DEF_BASE')           || define('DEF_BASE', "base");
 defined('DEF_BACKEND')        || define('DEF_BACKEND', "backend");
-//defined('DEF_FRONTEND')       || define('DEF_FRONTEND', "frontend");
 defined('DEF_COMMON')         || define('DEF_COMMON', "common");
 defined('DIR_CONFIG')         || define('DIR_CONFIG', "config");
 defined('DIR_CONTROLLER')     || define('DIR_CONTROLLER', "controllers");
