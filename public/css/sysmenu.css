@@ -1,0 +1,20 @@
+.sysmenu ul li {
+    display: inline;
+    list-style-type: none;
+    cursor: pointer;
+}
+.sysmenu ul li a {
+    text-decoration: none;
+    font-size: 70%;
+    color: #075362;
+    text-shadow: 1px 1px 1px #e4faff;
+}
+.sysmenu ul li a:hover {
+    color: #f15c25;
+}
+.sysmenu ul li.sep {
+    background-color: transparent;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #e1e5e6;
+}

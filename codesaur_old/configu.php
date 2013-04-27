@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 session_start();
 
 // Вебийн тохиргоо
-$webRoot = 'http://localhost/codesaur/';
+$webRoot = 'http://localhost/energysaures/';
 $cmsDir = 'codesaur_old/';
 $defaultCMS = 'menu/';
 $charsetIso = 'utf-8';

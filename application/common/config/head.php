@@ -7,6 +7,7 @@ return array(
     'charset' => "UTF-8",
     'description' => AUTHORTXT,
     'author' => AUTHORINF,
+    'generator' => AUTHORTTL,
     'title' => AUTHORTTL,
     'viewport' => "width=device-width, initial-scale=1.0",
     'favico' => _WEB_ . "public/cdn/cdn.ico",
